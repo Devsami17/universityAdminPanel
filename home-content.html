@@ -6,12 +6,12 @@
 <head>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <meta charset="utf-8" />
-        <title>Travel & Mobility</title>
+        <title>Content Management</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc."/>
         <meta name="author" content="Zoyothemes"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <!-- App favicon -->
         <link rel="shortcut icon" href="assets/images/logo.webp">
 
@@ -33,6 +33,7 @@
 
         <!-- Begin page -->
         <div id="app-layout">
+
             <!-- Left Sidebar Start -->
             <nav class="sidebar close">
                 <header>
@@ -62,7 +63,7 @@
                         </span>
                     </a>
                             </li>
-                            <li class="nav-link">
+                            <li class="nav-link active">
                                 <a href="content-management.html">
                                   
                                     <i class='bx bx-cog icon'></i>
@@ -88,7 +89,7 @@
                                                             </span>
                                                         </a>
                                                                 </li>
-                                                                <li class="nav-link active">
+                                                                <li class="nav-link">
                                                                     <a href="travel&mobility.html">
                                                                         <i class='bx bxs-plane-alt icon'></i>
                                                                         <span class="text nav-text">
@@ -120,6 +121,7 @@
                 </div>
               </nav>
             <!-- Left Sidebar End -->
+
             <!-- ============================================================== -->
             <!-- Start Page Content here -->
             <!-- ============================================================== -->
@@ -132,7 +134,7 @@
 
                     <div class="py-3 d-flex align-items-sm-center flex-sm-row flex-column">
                         <div class="flex-grow-1">
-                            <h4 class="fs-18 fw-semibold m-0">Edit Affiliate Programs Details</h4>
+                            <h4 class="fs-18 fw-semibold m-0">Content Management</h4>
                         </div>
         
                        
@@ -147,61 +149,11 @@
 
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col-lg-6">
-                                            <form>
-                                                <div class="mb-3">
-                                                  <label for="fullName" class="form-label">Ticket</label>
-                                                  <select id="status" class="form-control">
-                                                    <option value="in-progress">High Speed</option>
-                                                    <option value="completed">Luxury Train</option>
-                                                    <option value="completed">Cheap Train</option>
-
-                                                    
-                                                  </select>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="fullName" class="form-label">Category</label>
-                                                    <select id="status" class="form-control">
-                                                      <option value="in-progress">Train</option>
-                                                      <option value="completed">Bus</option>
-                                                      <option value="completed">Concert</option>
-                                                      <option value="completed">Plane</option>
-
-  
-                                                      
-                                                    </select>
-                                                  </div>
-                                                <div class="mb-3">
-                                                  <label for="status" class="form-label">Status</label>
-                                                  <select id="status" class="form-control">
-                                                    <option value="in-progress">In-Progress</option>
-                                                    <option value="completed">Completed</option>
-                                                    <option value="pending">Pending</option>
-                                                  </select>
-                                                </div>
-                                              
-                                                <div class="mb-3">
-                                                  <label for="email" class="form-label">Purchaser Name</label>
-                                                  <input type="text" id="email" class="form-control" value="John Doe">
-                                                </div>
-                                              
-                                                <div class="mb-3">
-                                                    <label for="email" class="form-label">Ticket Cost</label>
-                                                    <input type="text" id="email" class="form-control" readonly value="$500.00">
-                                                  </div>
-                                                  <div class="mb-3">
-                                                    <label for="email" class="form-label">Quantity</label>
-                                                    <input type="number" id="email" class="form-control"  value="1">
-                                                  </div>
-                                              
-                                                <div class="d-flex justify-content-end">
-                                                  <button type="submit"onclick="window.location='travel&mobility.html'" class="btn btn-primary me-2">Save</button>
-                                                  <button type="button" onclick="window.location='travel&mobility.html'" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-                                                </div>
-                                              </form>
-                                              
-                                        </div>
-
+                                      
+                                 <div class="mb-3">
+                                    <label class="form-label" >Main Banner</label>
+                                    <input type="file" class="form-control">
+                                 </div>
                                     
                                     </div>
                                 </div>
