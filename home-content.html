@@ -4,6 +4,7 @@
 <!-- Mirrored from zoyothemes.com/hando/html/apps-todolist by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 13:19:19 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
+    
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <meta charset="utf-8" />
         <title>Content Management</title>
@@ -24,7 +25,7 @@
         <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
 
         <script src="assets/js/head.js"></script>
-
+        <script src="https://cdn.ckeditor.com/ckeditor5/39.0.0/classic/ckeditor.js"></script>
 
     </head>
 
@@ -134,7 +135,7 @@
 
                     <div class="py-3 d-flex align-items-sm-center flex-sm-row flex-column">
                         <div class="flex-grow-1">
-                            <h4 class="fs-18 fw-semibold m-0">Content Management</h4>
+                            <h4 class="fs-18 fw-semibold m-0">Home Page</h4>
                         </div>
         
                        
@@ -149,12 +150,263 @@
 
                                 <div class="card-body">
                                     <div class="row">
-                                      
-                                 <div class="mb-3">
-                                    <label class="form-label" >Main Banner</label>
-                                    <input type="file" class="form-control">
+                                      <h5 class="content-title">Main Banner</h5>
+                                 <div class="mb-3 position-relative">
+                                    <label class="form-label" >Upload Video</label><br>
+                                   <img height="300px" width="80%"  src="assets/images/Screenshot 2025-01-28 221943.png" alt="">
+                                   <div class="upload-btn">
+                                    <input type="file"  class="d-none" id="upload-banner">
+                                    <i class='bx bx-cloud-upload' onclick="openfile()"></i>
+                                   </div>
                                  </div>
-                                    
+                                 <h5 class="mt-3 content-title">First Section</h5>
+                                 <div class="mb-3 ">
+                                    <label class="form-label" >Title</label><br>
+                                  <input type="text" class="form-control" value="Travel and Mobility for Global Explorers">
+                                   
+                                 </div>
+                                 <h6 class="box-title">Box 1</h6>
+                                 <div class="mb-3 position-relative">
+                                    <label class="form-label" >Title</label>
+                                    <input type="text" class="form-control" value="Educational Trips">
+                                 </div>
+                                 <div class="mb-3 position-relative">
+                                    <label class="form-label" >Description</label>
+                                    <textarea  id="texteditor1" cols="30" rows="10" ><p>Broaden your horizons with our exclusive offers for cultural and academic trips. From fascinating excursions to intensive workshops abroad - we offer you unique opportunities to explore the world and gain valuable experiences.</p></textarea>
+                                 </div>
+                                 <div class="mb-3 position-relative">
+                                    <label class="form-label" >Image</label><br>
+                                   <img height="200px" src="assets/images/website/edu_4_11zon.jpg" alt="t">
+                                   <div class="upload-btn">
+                                    <input type="file"  class="d-none" id="upload-banner">
+                                    <i class='bx bx-cloud-upload' onclick="openfile()"></i>
+                                   </div>
+                                </div>
+
+                                <h6 class="box-title">Box 2</h6>
+                                <div class="mb-3 position-relative">
+                                   <label class="form-label" >Title</label>
+                                   <input type="text" class="form-control" value="Flexible Mobility">
+                                </div>
+                                <div class="mb-3 position-relative">
+                                   <label class="form-label" >Description</label>
+                                   <textarea  id="texteditor2" cols="30" rows="10" ><p>Thanks to our partnerships with renowned providers like Sixt, Europcar, and local car-sharing services, you enjoy affordable and flexible mobility. Whether for a day trip or a longer internship - we ensure that you remain mobile at all times.</p></textarea>
+                                </div>
+                                <div class="mb-3 position-relative">
+                                   <label class="form-label" >Image</label><br>
+                                  <img height="200px" src="assets/images/website/friends-using-different-options-individual-transport_5_11zon.jpg" alt="t">
+                                  <div class="upload-btn">
+                                   <input type="file"  class="d-none" id="upload-banner">
+                                   <i class='bx bx-cloud-upload' onclick="openfile()"></i>
+                                  </div>
+                               </div>
+
+
+                               <h6 class="box-title">Box 3</h6>
+                               <div class="mb-3 position-relative">
+                                  <label class="form-label" >Title</label>
+                                  <input type="text" class="form-control" value="Easy Start to Accommodation">
+                               </div>
+                               <div class="mb-3 position-relative">
+                                  <label class="form-label" >Description</label>
+                                  <textarea  id="texteditor3" cols="30" rows="10" ><p>Moving into your first own flat or shared apartment becomes a breeze with our complete packages. From practical kitchen starter sets to sustainable furniture options - we support you in making your new home cozy and functional.</p></textarea>
+                               </div>
+                               <div class="mb-3 position-relative">
+                                  <label class="form-label" >Image</label><br>
+                                 <img height="200px" src="assets/images/website/young-man-working-his-laptop-hotel-room_4_11zon.jpg" alt="t">
+                                 <div class="upload-btn">
+                                  <input type="file"  class="d-none" id="upload-banner">
+                                  <i class='bx bx-cloud-upload' onclick="openfile()"></i>
+                                 </div>
+                              </div>
+
+
+
+                              <h5 class="mt-3 content-title">Second Section</h5>
+                              <div class="mb-3 ">
+                                 <label class="form-label" >Title</label><br>
+                               <input type="text" class="form-control" value="Diverse Affiliate Programmes">
+                                
+                              </div>
+                              <h6 class="box-title">Box 1</h6>
+                              <div class="mb-3 position-relative">
+                                 <label class="form-label" >Title</label>
+                                 <input type="text" class="form-control" value="Technology and Electronics">
+                              </div>
+                              <div class="mb-3 position-relative">
+                                 <label class="form-label" >Description</label>
+                                 <textarea  id="texteditor4" cols="30" rows="10" ><p>Benefit from exclusive brand partnerships with HP, Dell, Bose, and Apple. Enjoy not only special discounts but also attractive cashback programmes when purchasing devices and accessories. This way, you can save on your tech investments and always stay up-to-date.</p></textarea>
+                              </div>
+                              <div class="mb-3 position-relative">
+                                 <label class="form-label" >Image</label><br>
+                                <img height="200px" src="assets/images/website/modern-stationary-collection-arrangement_2_11zon.jpg" alt="t">
+                                <div class="upload-btn">
+                                 <input type="file"  class="d-none" id="upload-banner">
+                                 <i class='bx bx-cloud-upload' onclick="openfile()"></i>
+                                </div>
+                             </div>
+
+                             <h6 class="box-title">Box 2</h6>
+                             <div class="mb-3 position-relative">
+                                <label class="form-label" >Title</label>
+                                <input type="text" class="form-control" value="Insurance">
+                             </div>
+                             <div class="mb-3 position-relative">
+                                <label class="form-label" >Description</label>
+                                <textarea  id="texteditor5" cols="30" rows="10" ><p>Use our direct affiliate links to leading insurance providers who offer tailored policies for students. Compare and take out insurance directly through our platform - simple, transparent, and optimally suited to your needs.</p></textarea>
+                             </div>
+                             <div class="mb-3 position-relative">
+                                <label class="form-label" >Image</label><br>
+                               <img height="200px" src="assets/images/website/life-insurance-protection-beneficiary-safeguard-concept_8_11zon.jpg" alt="t">
+                               <div class="upload-btn">
+                                <input type="file"  class="d-none" id="upload-banner">
+                                <i class='bx bx-cloud-upload' onclick="openfile()"></i>
+                               </div>
+                            </div>
+
+
+                            <h6 class="box-title">Box 3</h6>
+                            <div class="mb-3 position-relative">
+                               <label class="form-label" >Title</label>
+                               <input type="text" class="form-control" value="Leisure and Travel">
+                            </div>
+                            <div class="mb-3 position-relative">
+                               <label class="form-label" >Description</label>
+                               <textarea  id="texteditor6" cols="30" rows="10" ><p>Discover a world of special offers for theme parks, concert tickets, and events. Plan your next trip with our exclusive travel packages, which have been specially put together for students at affordable prices. Experience more without blowing your budget!.</p></textarea>
+                            </div>
+                            <div class="mb-3 position-relative">
+                               <label class="form-label" >Image</label><br>
+                              <img height="200px" src="assets/images/website/beautiful-girl-making-drip-coffee-sunrise-viewpoint-pha-hi-village-chiang-rai-province-thailand_1_11zon.jpg" alt="t">
+                              <div class="upload-btn">
+                               <input type="file"  class="d-none" id="upload-banner">
+                               <i class='bx bx-cloud-upload' onclick="openfile()"></i>
+                              </div>
+                           </div>
+
+
+                           <h5 class="mt-3 content-title">Third Section</h5>
+                           <div class="mb-3 ">
+                              <label class="form-label" >Title</label><br>
+                            <input type="text" class="form-control" value="Personal Development through Workshops and Events">
+                             
+                           </div>
+                           <div class="mb-3 position-relative">
+                            <label class="form-label" >Upload Video</label><br>
+                           <img height="300px" width="80%"  src="assets/images/website/0002.jpg" alt="">
+                           <div class="upload-btn">
+                            <input type="file"  class="d-none" id="upload-banner">
+                            <i class='bx bx-cloud-upload' onclick="openfile()"></i>
+                           </div>
+                         </div>
+                           <h6 class="box-title">Box 1</h6>
+                           <div class="mb-3 position-relative">
+                              <label class="form-label" >Title</label>
+                              <input type="text" class="form-control" value="Career Development">
+                           </div>
+                           <div class="mb-3 position-relative">
+                              <label class="form-label" >Description</label>
+                              <textarea  id="texteditor7" cols="30" rows="10" ><p>Boost your career prospects with our practical workshops. Learn how to write compelling applications, present yourself effectively in interviews, and network efficiently. Benefit from the experiences of successful professionals and prepare optimally for your career start.</p></textarea>
+                           </div>
+
+
+                          <h6 class="box-title">Box 2</h6>
+                          <div class="mb-3 position-relative">
+                             <label class="form-label" >Title</label>
+                             <input type="text" class="form-control" value="Mindset and Stress Management">
+                          </div>
+                          <div class="mb-3 position-relative">
+                             <label class="form-label" >Description</label>
+                             <textarea  id="texteditor8" cols="30" rows="10" ><p>Master the challenges of your studies with our workshops on resilience, relaxation techniques, and time management. Learn how to maintain balance even in stressful exam periods and care for your mental health.</p></textarea>
+                          </div>
+                       
+
+
+                         <h6 class="box-title">Box 3</h6>
+                         <div class="mb-3 position-relative">
+                            <label class="form-label" >Title</label>
+                            <input type="text" class="form-control" value="Financial Education">
+                         </div>
+                         <div class="mb-3 position-relative">
+                            <label class="form-label" >Description</label>
+                            <textarea  id="texteditor9" cols="30" rows="10" ><p>Become a finance pro with our training on budgeting, tax optimisation, and dealing with funding. Understand the basics of financial independence and lay the foundation for a secure financial future during your studies.</p></textarea>
+                         </div>
+
+                         <h6 class="box-title">Box 4</h6>
+                         <div class="mb-3 position-relative">
+                            <label class="form-label" >Title</label>
+                            <input type="text" class="form-control" value="Networking Events">
+                         </div>
+                         <div class="mb-3 position-relative">
+                            <label class="form-label" >Description</label>
+                            <textarea  id="texteditor10" cols="30" rows="10" ><p>Make valuable contacts at our exclusive meetings with industry experts, alumni, and potential employers. Expand your professional network and discover exciting career opportunities in a relaxed atmosphere.</p></textarea>
+                         </div>
+
+
+
+
+                         
+                         <h5 class="mt-3 content-title">Last Section</h5>
+                         <div class="mb-3 ">
+                            <label class="form-label" >Title</label><br>
+                          <input type="text" class="form-control" value="AI Integration for a Smart Student Life">
+                           
+                         </div>
+                         <h6 class="box-title">Box 1</h6>
+                         <div class="mb-3 position-relative">
+                            <label class="form-label" >Title</label>
+                            <input type="text" class="form-control" value="Personalised Recommendations">
+                         </div>
+                         <div class="mb-3 position-relative">
+                            <label class="form-label" >Description</label>
+                            <textarea  id="texteditor11" cols="30" rows="10" ><p>Our AI analyses your field of study, interests and past activities to suggest customised offers, workshops and content. This way, you'll find the exact support you need for your current stage of studies.</p></textarea>
+                         </div>
+                         <div class="mb-3 position-relative">
+                            <label class="form-label" >Image</label><br>
+                           <img height="200px" src="assets/images/website/close-up-young-business-person-doing-internship_2_11zon.jpg" alt="t">
+                           <div class="upload-btn">
+                            <input type="file"  class="d-none" id="upload-banner">
+                            <i class='bx bx-cloud-upload' onclick="openfile()"></i>
+                           </div>
+                        </div>
+
+                        <h6 class="box-title">Box 2</h6>
+                        <div class="mb-3 position-relative">
+                           <label class="form-label" >Title</label>
+                           <input type="text" class="form-control" value="Intelligent Budgeting">
+                        </div>
+                        <div class="mb-3 position-relative">
+                           <label class="form-label" >Description</label>
+                           <textarea  id="texteditor12" cols="30" rows="10" ><p>Our AI-powered budgeting tool helps you keep track of your monthly expenses and set realistic savings goals. Learn how to use your money wisely and stay financially independent even on a student budget.</p></textarea>
+                        </div>
+                        <div class="mb-3 position-relative">
+                           <label class="form-label" >Image</label><br>
+                          <img height="200px" src="assets/images/website/person-office-analyzing-checking-finance-graphs_3_11zon.jpg" alt="t">
+                          <div class="upload-btn">
+                           <input type="file"  class="d-none" id="upload-banner">
+                           <i class='bx bx-cloud-upload' onclick="openfile()"></i>
+                          </div>
+                       </div>
+
+
+                       <h6 class="box-title">Box 3</h6>
+                       <div class="mb-3 position-relative">
+                          <label class="form-label" >Title</label>
+                          <input type="text" class="form-control" value="Smart Notifications">
+                       </div>
+                       <div class="mb-3 position-relative">
+                          <label class="form-label" >Description</label>
+                          <textarea  id="texteditor13" cols="30" rows="10" ><p>Never miss important deadlines or offers again. Our AI system reminds you in time of application deadlines, upcoming workshops or new discount campaigns that perfectly match your interests.</p></textarea>
+                       </div>
+                       <div class="mb-3 position-relative">
+                          <label class="form-label" >Image</label><br>
+                         <img height="200px" src="assets/images/website/man-with-bag-outside_1_11zon.jpg" alt="t">
+                         <div class="upload-btn">
+                          <input type="file"  class="d-none" id="upload-banner">
+                          <i class='bx bx-cloud-upload' onclick="openfile()"></i>
+                         </div>
+                      </div>
+
+                     
                                     </div>
                                 </div>
 
@@ -193,7 +445,77 @@
 
         <!-- App js-->
         <script src="assets/js/app.js"></script>
+        <script>
+            ClassicEditor
+               .create( document.querySelector( '#texteditor1' ) )
+               .catch( error => {
+                   console.error( error );
+               });
+               ClassicEditor
+               .create( document.querySelector( '#texteditor2' ) )
+               .catch( error => {
+                   console.error( error );
+               });
+               ClassicEditor
+               .create( document.querySelector( '#texteditor3' ) )
+               .catch( error => {
+                   console.error( error );
+               });
+               ClassicEditor
+               .create( document.querySelector( '#texteditor4' ) )
+               .catch( error => {
+                   console.error( error );
+               });
+               ClassicEditor
+               .create( document.querySelector( '#texteditor5' ) )
+               .catch( error => {
+                   console.error( error );
+               });
+               ClassicEditor
+               .create( document.querySelector( '#texteditor6' ) )
+               .catch( error => {
+                   console.error( error );
+               });
+               ClassicEditor
+               .create( document.querySelector( '#texteditor7' ) )
+               .catch( error => {
+                   console.error( error );
+               });
+               ClassicEditor
+               .create( document.querySelector( '#texteditor8' ) )
+               .catch( error => {
+                   console.error( error );
+               });
+               ClassicEditor
+               .create( document.querySelector( '#texteditor9' ) )
+               .catch( error => {
+                   console.error( error );
+               });
+               ClassicEditor
+               .create( document.querySelector( '#texteditor10' ) )
+               .catch( error => {
+                   console.error( error );
+               });
+               ClassicEditor
+               .create( document.querySelector( '#texteditor11' ) )
+               .catch( error => {
+                   console.error( error );
+               });
+               ClassicEditor
+               .create( document.querySelector( '#texteditor12' ) )
+               .catch( error => {
+                   console.error( error );
+               });
+               ClassicEditor
+               .create( document.querySelector( '#texteditor13' ) )
+               .catch( error => {
+                   console.error( error );
+               });
 
+    function openfile(){
+        document.querySelector('#upload-banner').click();
+    }
+</script>
     </body>
 
 <!-- Mirrored from zoyothemes.com/hando/html/apps-todolist by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 13:19:23 GMT -->

@@ -4,6 +4,7 @@
 <!-- Mirrored from zoyothemes.com/hando/html/apps-todolist by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 13:19:19 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
+    
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <meta charset="utf-8" />
         <title>Content Management</title>
@@ -24,7 +25,7 @@
         <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
 
         <script src="assets/js/head.js"></script>
-
+        <script src="https://cdn.ckeditor.com/ckeditor5/39.0.0/classic/ckeditor.js"></script>
 
     </head>
 
@@ -134,7 +135,7 @@
 
                     <div class="py-3 d-flex align-items-sm-center flex-sm-row flex-column">
                         <div class="flex-grow-1">
-                            <h4 class="fs-18 fw-semibold m-0">Content Management</h4>
+                            <h4 class="fs-18 fw-semibold m-0">Travel & Mobility</h4>
                         </div>
         
                        
@@ -149,29 +150,25 @@
 
                                 <div class="card-body">
                                     <div class="row">
-                                      
-                                        <div class="frontend-section-card-group">
-                                            <div class="frontend-section-card ">
-                                                <h6>Home Page</h6>
-                                                <a href="home-content.html"><i class="bi bi-gear"></i></a>
-                                            </div>
-
-                                            <div class="frontend-section-card ">
-                                                <h6>Travel & Mobility</h6>
-                                                <a href="travel-mobility-content.html"><i class="bi bi-gear"></i></a>
-                                            </div>
-                                            <div class="frontend-section-card ">
-                                                <h6>Affiliate Programs</h6>
-                                                <a href="content-affiliate.html"><i class="bi bi-gear"></i></a>
-                                            </div>
-                                            <div class="frontend-section-card ">
-                                                <h6>Workshops and Events</h6>
-                                                <a href="content-workshop.html"><i class="bi bi-gear"></i></a>
-                                            </div>
-                                          
-                                            
-                                        </div>
-                                    
+                                      <h5 class="content-title">Main Banner</h5>
+                                 <div class="mb-3 position-relative">
+                                    <label class="form-label" >Upload Image</label><br>
+                                   <img height="300px" width="80%"  src="assets/images/Screenshot 2025-01-28 221943.png" alt="">
+                                   <div class="upload-btn">
+                                    <input type="file"  class="d-none" id="upload-banner">
+                                    <i class='bx bx-cloud-upload' onclick="openfile()"></i>
+                                   </div>
+                                 </div>
+                                 <div class="mb-3 position-relative">
+                                    <label class="form-label" >Title</label>
+                                    <input type="text" class="form-control" value="Mindset and Stress Management">
+                                 </div>
+                                 <div class="mb-3 position-relative">
+                                    <label class="form-label" >Description</label>
+                                    <textarea  id="texteditor1" cols="30" rows="10" ><p>Master the challenges of your studies with our workshops on resilience, relaxation techniques, and time management. Learn how to maintain balance even in stressful exam periods and care for your mental health.</p></textarea>
+                                 </div>
+                                 
+                     
                                     </div>
                                 </div>
 
@@ -210,7 +207,18 @@
 
         <!-- App js-->
         <script src="assets/js/app.js"></script>
+        <script>
+            ClassicEditor
+               .create( document.querySelector( '#texteditor1' ) )
+               .catch( error => {
+                   console.error( error );
+               });
 
+
+    function openfile(){
+        document.querySelector('#upload-banner').click();
+    }
+</script>
     </body>
 
 <!-- Mirrored from zoyothemes.com/hando/html/apps-todolist by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 13:19:23 GMT -->

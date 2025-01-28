@@ -501,3 +501,36 @@ color: #fff  !important;
 {
   stroke: rgb(189, 185, 250);
 }
+.content-title{
+  font-weight: 600;
+  color: #000;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.box-title{
+  font-weight: 600;
+  color: #000;
+  font-size: 18px;
+}
+.upload-btn{
+  position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid #fff;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: #fff;
+    margin-bottom: 0;
+    left: 0;
+    bottom: -15px;
+}
+.ck-editor__editable{
+  height: 200px;
+}
